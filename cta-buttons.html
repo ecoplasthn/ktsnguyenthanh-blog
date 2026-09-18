@@ -1,0 +1,45 @@
+<!-- NÚT LIÊN HỆ NỔI (FLOATING CTA) -->
+<style>
+  .floating-cta {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .cta-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    transition: transform 0.2s, opacity 0.2s;
+  }
+
+  .cta-btn:hover { transform: scale(1.1); }
+  .cta-zalo { background-color: #0084ff; }
+  .cta-phone { background-color: #f37021; }
+
+  .cta-btn svg { width: 24px; height: 24px; fill: currentColor; }
+</style>
+
+<div class="floating-cta">
+  <!-- Nút Zalo -->
+  <a href="https://zalo.me/0359117525" target="_blank" rel="noopener" class="cta-btn cta-zalo" title="Chat Zalo KTS Nguyễn Thanh">
+    Zalo
+  </a>
+  
+  <!-- Nút Hotline -->
+  <a href="tel:0886374043" class="cta-btn cta-phone" title="Gọi Hotline 0886 374 043">
+    📞
+  </a>
+</div>
