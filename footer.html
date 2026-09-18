@@ -1,0 +1,179 @@
+<!-- FOOTER CỐ ĐỊNH - ĐỊNH DANH KTS PORTFOLIO -->
+<style>
+  :root {
+    --primary-blue: #008744;
+    --accent-orange: #f37021;
+    --footer-bg: #16181a;
+    --footer-border: #26292c;
+    --text-muted: #9aa0a6;
+    --white: #ffffff;
+  }
+
+  .site-footer {
+    background-color: var(--footer-bg);
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.6;
+    border-top: 3px solid var(--primary-blue);
+    margin-top: 60px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  }
+
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 15px 20px 15px;
+    display: grid;
+    grid-template-columns: 1.8fr 1.2fr 1fr;
+    gap: 30px;
+  }
+
+  .footer-col h3 {
+    color: var(--white);
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 8px;
+  }
+
+  .footer-col h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 35px;
+    height: 2px;
+    background-color: var(--accent-orange);
+  }
+
+  .brand-title {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .brand-sub {
+    color: var(--accent-orange);
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+
+  .footer-contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-contact-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-links li {
+    margin-bottom: 8px;
+  }
+
+  .footer-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .footer-links a:hover {
+    color: var(--accent-orange);
+  }
+
+  /* Bottom Copyright Bar */
+  .footer-bottom {
+    background-color: #0e1011;
+    border-top: 1px solid var(--footer-border);
+    padding: 15px 0;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .footer-bottom-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .copyright-text strong {
+    color: var(--white);
+  }
+
+  @media (max-width: 768px) {
+    .footer-container {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+    .footer-bottom-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+</style>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    
+    <!-- Cột 1: Thông tin KTS & Định danh thương hiệu -->
+    <div class="footer-col">
+      <div class="brand-title">KTS NGUYỄN THANH</div>
+      <div class="brand-sub">Hồ Sơ Năng Lực & Nhật Ký Thi Công Nội Thất</div>
+      <p style="margin-bottom: 15px;">
+        Chuyên tư vấn kiến trúc, thiết kế không gian và trực tiếp giám sát thi công các sản phẩm nội thất nhựa cao cấp Ecoplast Đại Việt. Tối ưu công năng, thẩm mỹ hiện đại và cam kết chất lượng thực tế.
+      </p>
+    </div>
+
+    <!-- Cột 2: Xác thực xưởng & Liên hệ trực tiếp -->
+    <div class="footer-col">
+      <h3>XÁC THỰC THÔNG TIN</h3>
+      <ul class="footer-contact-list">
+        <li>📍 <strong>Xưởng sản xuất:</strong> Ngõ 19 Kim Quan, P. Việt Hưng, Hà Nội</li>
+        <li>📞 <strong>Hotline / Zalo:</strong> <a href="tel:0886374043" style="color: var(--accent-orange); font-weight: bold; text-decoration: none;">0886 374 043</a></li>
+        <li>🌐 <strong>Website chính thức:</strong> <a href="https://ecoplasthanoi.io.vn" target="_blank" rel="noopener" style="color: var(--text-muted); text-decoration: underline;">ecoplasthanoi.io.vn</a></li>
+        <li>🛡️ <strong>Chất liệu chuẩn:</strong> Nhựa Ecoplast Đại Việt chính hãng</li>
+      </ul>
+    </div>
+
+    <!-- Cột 3: Danh mục hồ sơ nhanh -->
+    <div class="footer-col">
+      <h3>HỒ SƠ CÔNG TRÌNH</h3>
+      <ul class="footer-links">
+        <li><a href="https://ktsnguyenthanh.io.vn/tu-bep-nhua-ecoplast.html">Thi công Tủ Bếp</a></li>
+        <li><a href="https://ktsnguyenthanh.io.vn/tu-nhua-quan-ao-ecoplast.html">Thi công Tủ Áo</a></li>
+        <li><a href="https://ktsnguyenthanh.io.vn/combo-phong-ngu-nhua-ecoplast.html">Combo Phòng Ngủ</a></li>
+        <li><a href="https://ktsnguyenthanh.io.vn/tu-van-noi-that.html">Góc Tư Vấn KTS</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Thanh bản quyền phía dưới cùng -->
+  <div class="footer-bottom">
+    <div class="footer-bottom-container">
+      <div class="copyright-text">
+        &copy; 2026 <strong>KTS Nguyễn Thanh</strong>. Toàn bộ hình ảnh & bài viết thuộc bản quyền nhật ký thi công thực tế.
+      </div>
+      <div>
+        <span>Nền tảng: GitHub Pages Tĩnh • Tốc độ tối ưu</span>
+      </div>
+    </div>
+  </div>
+</footer>
