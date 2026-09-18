@@ -1,19 +1,109 @@
-<script>
-  fetch('/posts.json')
-    .then(response => response.json())
-    .then(data => {
-      // Lọc ra đúng bài viết thuộc danh mục 'tu-bep'
-      const posts = data.filter(item => item.category === 'tu-bep');
-      
-      const container = document.getElementById('project-list');
-      container.innerHTML = posts.map(post => `
-        <div class="card">
-          <div class="card-meta">${post.date} • ${post.location}</div>
-          <h3 class="card-title">${post.title}</h3>
-          <p class="card-desc">${post.desc}</p>
-          <a href="${post.url}" class="btn-read">ĐỌC TIẾP</a>
-        </div>
-      `).join('');
-    })
-    .catch(err => console.error('Lỗi tải danh sách bài viết:', err));
-</script>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tủ Bếp Nhựa Ecoplast Cao Cấp - Báo Giá & Mẫu Thiết Kế - KTS Nguyễn Thanh</title>
+  <meta name="description" content="Tổng hợp các mẫu tủ bếp nhựa Ecoplast cao cấp chữ L, chữ I, có khoang máy rửa bát. Giải pháp chống nước 100%, chống mối mọt, không ẩm mốc. Tư vấn bởi KTS Nguyễn Thanh." />
+  <link rel="canonical" href="https://ktsnguyenthanh.io.vn/tu-bep-nhua-ecoplast.html" />
+  <link rel="icon" type="image/webp" href="https://raw.githubusercontent.com/ecoplasthn/ktsnguyenthanh-blog/refs/heads/main/KTS%20Nguy%E1%BB%85n%20thanh.webp" />
+
+  <!-- CSS Cố Định Dùng Chung -->
+  <link rel="stylesheet" href="/style.css" />
+
+  <!-- Schema JSON-LD WebPage & CollectionPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "headline": "Mẫu Tủ Bếp Nhựa Ecoplast Cao Cấp Chống Nước, Chống Mối Mọt",
+        "author": {
+          "@type": "Person",
+          "name": "KTS Nguyễn Thanh",
+          "url": "https://ktsnguyenthanh.io.vn/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Nội Thất Nhựa Ecoplast Hà Nội",
+          "url": "https://ecoplasthanoi.io.vn/"
+        },
+        "description": "Giải pháp thiết kế và thi công tủ bếp nhựa Ecoplast cao cấp tối ưu công năng, chống ẩm mốc tuyệt đối cho không gian nhà bếp."
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- 1. Header Cố Định -->
+  <div id="site-header"></div>
+
+  <!-- 2. Nội Dung Bài Viết -->
+  <main class="main-container">
+    <h1 class="page-title">
+      <span style="color: var(--primary-blue, #008744);">TỦ BẾP NHỰA ECOPLAST CAO CẤP</span><br>
+      <span style="color: var(--accent-orange, #f37021);">GIẢI PHÁP CHỐNG NƯỚC & ẨM MỐC TUYỆT ĐỐI CHO CĂN BẾP</span>
+    </h1>
+
+    <div class="story-quote" style="background: #1a1a1a; border-left: 4px solid var(--primary-blue, #008744); padding: 15px 20px; margin: 25px 0; border-radius: 0 8px 8px 0; font-style: italic; color: #ddd;">
+      "Khu vực bếp là nơi thường xuyên tiếp xúc với nước, nhiệt độ và độ ẩm cao. Tủ bếp nhựa Ecoplast Đại Việt ra đời giải quyết triệt để tình trạng mục nát, mối mọt xông ở tủ gỗ truyền thống, mang lại vẻ đẹp hiện đại và độ bền vượt thời gian." — KTS Nguyễn Thanh.
+    </div>
+
+    <h2>1. Vì Sao Tủ Bếp Nhựa Ecoplast Là Lựa Chọn Hàng Đầu?</h2>
+    <p>Nhà bếp ven sông hay các khu vực tầng 1 nhà phố, căn hộ chung cư thường xuyên gặp tình trạng ẩm mốc, xệ cánh hay mối mọt tấn công nếu dùng gỗ công nghiệp. Nhựa Ecoplast với mật độ nhựa dày, gân tăng cường chịu lực cao là vật liệu tối ưu để thi công tủ bếp hiện đại.</p>
+
+    <h3 style="margin-top: 15px; margin-bottom: 10px; color: #fff;">Ưu điểm vượt trội của hệ tủ bếp Ecoplast:</h3>
+    <p>• <strong>Chống nước tuyệt đối 100%:</strong> Tấm nhựa rỗng gân mật độ cao không thấm nước, không trương nở hay ngấm nước ngay cả khi ngập lụt hay rò rỉ chậu rửa.</p>
+    <p>• <strong>Chống mối mọt & ẩm mốc:</strong> Thành phần nhựa PVC nguyên sinh loại bỏ hoàn toàn nguy cơ mối mọt xông đục phá.</p>
+    <p>• <strong>Chịu tải trọng & chịu nhiệt tốt:</strong> Kết cấu khung tủ chắc chắn, lắp đặt được mặt đá bếp nặng, chậu rửa âm và các thiết bị bếp hiện đại.</p>
+    <p>• <strong>Dễ dàng vệ sinh, lau chùi:</strong> Bề mặt phủ bóng mịn, chống bám dính dầu mỡ, giúp công việc dọn dẹp căn bếp trở nên nhẹ nhàng.</p>
+
+    <h2>2. Các Kiểu Dáng Tủ Bếp Nhựa Ecoplast Phổ Biến</h2>
+    <p>KTS Nguyễn Thanh trực tiếp khảo sát và thiết kế các phương án tủ bếp chuẩn tam giác hoạt động (Tủ lạnh - Bồn rửa - Bếp nấu) tối ưu cho từng không gian:</p>
+    
+    <p>• <strong>Tủ bếp nhựa chữ I:</strong> Thiết kế thẳng gọn gàng, phù hợp cho nhà ống hẹp ngang, căn hộ chung cư studio hoặc diện tích nhỏ.</p>
+    <p>• <strong>Tủ bếp nhựa chữ L:</strong> Dòng tủ bếp phổ biến nhất, tận dụng tối đa góc chết của căn nhà, tạo khoảng không di chuyển nấu nướng thoải mái.</p>
+    <p>• <strong>Tủ bếp nhựa chữ U / Có đảo bếp:</strong> Dành cho căn bếp rộng, biệt thự, nhà phố hiện đại, tích hợp quầy bar nhỏ hoặc đảo bếp chuẩn sang trọng.</p>
+    <p>• <strong>Hệ tủ tích hợp ô chứa máy rửa bát âm tủ:</strong> Bố trí chuẩn kích thước ô chờ máy rửa bát, giá bát đĩa nâng hạ cánh kính mờ và kệ gia vị giảm chấn cao cấp.</p>
+
+    <h2>3. Phối Màu & Thiết Kế Bề Mặt Ấn Tượng</h2>
+    <p>Không chỉ bền bỉ, tủ bếp Ecoplast còn mang tính thẩm mỹ cao nhờ sự kết hợp vật liệu linh hoạt:</p>
+    <p>• <strong>Tông màu ghi xám & khung đen:</strong> Tạo chiều sâu hiện đại, tinh tế cho căn bếp phong cách Minimalism.</p>
+    <p>• <strong>Tông màu vân gỗ ấm cúng:</strong> Vân gỗ sồi, óc chó kết hợp kính ốp bếp cường lực màu xanh ngọc, trắng sữa mang lại không gian ấm cúng.</p>
+    <p>• <strong>Mặt bếp ốp đá & kính cường lực:</strong> Sử dụng đá đen kim sa, đá thạch anh trắng chống thấm kết hợp kính cường lực dễ lau chùi dầu mỡ.</p>
+
+    <!-- Khối Thông Tin Tư Vấn & Cam Kết -->
+    <div style="background: #1a1a1a; padding: 22px; border-radius: 8px; margin: 30px 0; border: 1px solid #2e2e2e;">
+      <h3 style="color: var(--accent-orange, #f37021); margin-bottom: 15px;">CAM KẾT THI CÔNG TẠI NỘI THẤT ECOPLAST HÀ NỘI</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li style="margin-bottom: 10px;">✔ <strong>100% Nhựa Ecoplast chính hãng:</strong> Đảm bảo độ dầy tấm, gân tăng cường đúng tiêu chuẩn nhà máy.</li>
+        <li style="margin-bottom: 10px;">✔ <strong>Tư vấn & Đo đạc tận nơi:</strong> KTS Nguyễn Thanh trực tiếp khảo sát, lên bản vẽ tối ưu không gian bếp.</li>
+        <li style="margin-bottom: 10px;">✔ <strong>Phụ kiện cao cấp:</strong> Sử dụng bản lề inox 304 chống gỉ, ray trượt giảm chấn êm ái.</li>
+        <li style="margin-bottom: 10px;">✔ <strong>Bảo hành uy tín:</strong> Bảo hành chất liệu nhựa 10 năm, hỗ trợ bảo trì trọn đời.</li>
+      </ul>
+    </div>
+
+    <!-- Khối Liên Kết Bàn Giao Thực Tế -->
+    <div style="background: #1a1a1a; padding: 22px; border-radius: 8px; border: 1px solid var(--primary-blue, #008744); margin-top: 35px;">
+      <h3 style="color: var(--accent-orange, #f37021); margin-bottom: 10px;">CÔNG TRÌNH BÀN GIAO THỰC TẾ</h3>
+      <p style="font-size: 13px; color: #aaa; margin-bottom: 12px;">Khám phá các nhật ký thi công tủ bếp nhựa Ecoplast thực tế từ KTS Nguyễn Thanh:</p>
+      <ul style="list-style: none; padding: 0; line-height: 2;">
+        <li>👉 Nhật ký Thường Tín: <a href="https://ktsnguyenthanh.io.vn/tu-bep-nhua-ecoplast-ninh-so-hong-van.html" style="color: var(--accent-orange, #f37021); font-weight: bold; text-decoration: none;">Tủ bếp nhựa chữ L có ô máy rửa bát tại Làng Ninh Sở (Hồng Vân)</a></li>
+        <li>👉 BST Sản phẩm chính: <a href="https://ecoplasthanoi.io.vn/tu-bep-nhua-ecoplast/" style="color: var(--primary-blue, #008744); font-weight: bold; text-decoration: none;" target="_blank" rel="noopener">Xem catalogue mẫu tủ bếp nhựa Ecoplast chính hãng</a></li>
+      </ul>
+    </div>
+
+    <!-- 3. Khối Tác Giả Tự Động Nạp -->
+    <div id="site-author"></div>
+  </main>
+
+  <!-- 4. Footer & Floating CTA Cố Định -->
+  <div id="site-footer"></div>
+  <div id="site-cta"></div>
+
+  <!-- Script JS Dùng Chung -->
+  <script src="/main.js"></script>
+</body>
+</html>
