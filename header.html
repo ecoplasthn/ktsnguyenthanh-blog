@@ -1,0 +1,161 @@
+<!-- HEADER CỐ ĐỊNH - TỐI ƯU SEO & CHUẨN MÀU LOGO (XANH - CAM) -->
+<style>
+  :root {
+    --primary-blue: #008744; /* Màu xanh chủ đạo theo tông logo */
+    --accent-orange: #f37021; /* Màu cam điểm nhấn */
+    --dark-text: #222222;
+    --light-bg: #f8f9fa;
+    --white: #ffffff;
+  }
+
+  /* Structural Styles */
+  .main-header {
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  }
+
+  .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .site-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .site-logo img {
+    height: 52px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  /* Navigation Bar */
+  .main-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 4px;
+    flex-wrap: wrap;
+  }
+
+  .nav-item a {
+    display: block;
+    padding: 8px 12px;
+    color: var(--dark-text);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13.5px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+    white-space: nowrap;
+  }
+
+  .nav-item a:hover {
+    color: var(--accent-orange);
+    background-color: rgba(243, 112, 33, 0.08);
+  }
+
+  /* Highlight nút đặc biệt */
+  .nav-item.highlight a {
+    background-color: var(--accent-orange);
+    color: var(--white);
+  }
+
+  .nav-item.highlight a:hover {
+    background-color: #e05d0e;
+    color: var(--white);
+  }
+
+  /* Responsive Mobile Toggle */
+  .mobile-menu-btn {
+    display: none;
+    background: none;
+    border: 2px solid var(--primary-blue);
+    color: var(--primary-blue);
+    font-size: 20px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 992px) {
+    .mobile-menu-btn {
+      display: block;
+    }
+
+    .nav-list {
+      display: none;
+      width: 100%;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: var(--white);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      padding: 10px 0;
+      gap: 0;
+    }
+
+    .nav-list.active {
+      display: flex;
+    }
+
+    .nav-item a {
+      padding: 12px 20px;
+      border-radius: 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+  }
+</style>
+
+<header class="main-header">
+  <div class="header-container">
+    <!-- Logo -->
+    <a href="https://ktsnguyenthanh.io.vn/" class="site-logo" title="KTS Nguyễn Thanh - Nội Thất Nhựa Ecoplast">
+      <img src="https://raw.githubusercontent.com/ecoplasthn/ktsnguyenthanh-blog/refs/heads/main/KTS%20Nguy%E1%BB%85n%20thanh.webp" alt="KTS Nguyễn Thanh - Nội Thất Nhựa Ecoplast" width="200" height="52" loading="eager" />
+    </a>
+
+    <!-- Nút Mobile Menu -->
+    <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle Navigation">☰</button>
+
+    <!-- Menu Danh Mục -->
+    <nav class="main-nav">
+      <ul class="nav-list" id="nav-list">
+        <li class="nav-item"><a href="https://ktsnguyenthanh.io.vn/">Trang chủ</a></li>
+        <li class="nav-item"><a href="https://ktsnguyenthanh.io.vn/tu-nhua-quan-ao-ecoplast.html">Tủ Tủ Áo</a></li>
+        <li class="nav-item"><a href="https://ktsnguyenthanh.io.vn/tu-bep-nhua-ecoplast.html">Tủ Bếp</a></li>
+        <li class="nav-item"><a href="https://ktsnguyenthanh.io.vn/giuong-ngu-nhua-ecoplast.html">Giường Ngủ</a></li>
+        <li class="nav-item"><a href="https://ktsnguyenthanh.io.vn/ban-hoc-nhua-ecoplast.html">Bàn Học</a></li>
+        <li class="nav-item"><a href="https://ktsnguyenthanh.io.vn/combo-phong-ngu-nhua-ecoplast.html">Combo Phòng Ngủ</a></li>
+        <li class="nav-item"><a href="https://ktsnguyenthanh.io.vn/ke-tivi-nhua-ecoplast.html">Kệ TV</a></li>
+        <li class="nav-item"><a href="https://ktsnguyenthanh.io.vn/tu-giay-nhua-ecoplast.html">Tủ Giày</a></li>
+        <li class="nav-item"><a href="https://ktsnguyenthanh.io.vn/tu-cau-thang-nhua-ecoplast.html">Tủ Cầu Thang</a></li>
+        <li class="nav-item highlight"><a href="https://ktsnguyenthanh.io.vn/tu-van-noi-that.html">Tư Vấn Nội Thất</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<script>
+  function toggleMobileMenu() {
+    var nav = document.getElementById('nav-list');
+    nav.classList.toggle('active');
+  }
+</script>
