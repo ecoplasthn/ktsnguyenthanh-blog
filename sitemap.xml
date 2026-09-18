@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Trang chủ -->
+  <url>
+    <loc>https://ktsnguyenthanh.io.vn/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Trang danh mục Tủ Quần Áo -->
+  <url>
+    <loc>https://ktsnguyenthanh.io.vn/tu-nhua-quan-ao-ecoplast.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Bài viết thi công Tủ quần áo Phạm Khắc Quảng -->
+  <url>
+    <loc>https://ktsnguyenthanh.io.vn/tu-nhua-quan-ao-ecoplast-pham-khac-quang.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Trang danh mục Tủ Bếp -->
+  <url>
+    <loc>https://ktsnguyenthanh.io.vn/tu-bep-nhua-ecoplast.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Bài viết thi công Tủ bếp Ninh Sở Hồng Vân -->
+  <url>
+    <loc>https://ktsnguyenthanh.io.vn/tu-bep-nhua-ecoplast-ninh-so-hong-van.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Các trang danh mục khác -->
+  <url>
+    <loc>https://ktsnguyenthanh.io.vn/giuong-ngu-nhua-ecoplast.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://ktsnguyenthanh.io.vn/ban-hoc-nhua-ecoplast.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://ktsnguyenthanh.io.vn/combo-phong-ngu-nhua-ecoplast.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://ktsnguyenthanh.io.vn/ke-tivi-nhua-ecoplast.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://ktsnguyenthanh.io.vn/tu-giay-nhua-ecoplast.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://ktsnguyenthanh.io.vn/tu-cau-thang-nhua-ecoplast.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://ktsnguyenthanh.io.vn/tu-van-noi-that.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
