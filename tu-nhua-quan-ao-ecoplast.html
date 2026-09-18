@@ -1,19 +1,108 @@
-<script>
-  fetch('/posts.json')
-    .then(response => response.json())
-    .then(data => {
-      // Chỉ lọc lấy các bài viết có category là 'tu-ao'
-      const posts = data.filter(item => item.category === 'tu-ao');
-      
-      const container = document.getElementById('project-list');
-      container.innerHTML = posts.map(post => `
-        <div class="card">
-          <div class="card-meta">${post.date} • ${post.location}</div>
-          <h3 class="card-title">${post.title}</h3>
-          <p class="card-desc">${post.desc}</p>
-          <a href="${post.url}" class="btn-read">ĐỌC TIẾP</a>
-        </div>
-      `).join('');
-    })
-    .catch(err => console.error('Lỗi tải danh sách bài viết tủ áo:', err));
-</script>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tủ Nhựa Quần Áo Ecoplast Cao Cấp - Báo Giá & Mẫu Thiết Kế - KTS Nguyễn Thanh</title>
+  <meta name="description" content="Tổng hợp các mẫu tủ nhựa quần áo Ecoplast cao cấp, bền đẹp, chống mối mọt, chống ẩm mốc 100%. Tư vấn thiết kế và thi công trực tiếp bởi KTS Nguyễn Thanh." />
+  <link rel="canonical" href="https://ktsnguyenthanh.io.vn/tu-nhua-quan-ao-ecoplast.html" />
+  <link rel="icon" type="image/webp" href="https://raw.githubusercontent.com/ecoplasthn/ktsnguyenthanh-blog/refs/heads/main/KTS%20Nguy%E1%BB%85n%20thanh.webp" />
+
+  <!-- CSS Cố Định Dùng Chung -->
+  <link rel="stylesheet" href="/style.css" />
+
+  <!-- Schema JSON-LD WebPage & CollectionPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "headline": "Mẫu Tủ Nhựa Quần Áo Ecoplast Cao Cấp Chống Ẩm Mốc, Mối Mọt",
+        "author": {
+          "@type": "Person",
+          "name": "KTS Nguyễn Thanh",
+          "url": "https://ktsnguyenthanh.io.vn/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Nội Thất Nhựa Ecoplast Hà Nội",
+          "url": "https://ecoplasthanoi.io.vn/"
+        },
+        "description": "Giải pháp thiết kế tủ quần áo nhựa Ecoplast tối ưu diện tích, độ bền vượt trội cho mọi gia đình."
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- 1. Header Cố Định -->
+  <div id="site-header"></div>
+
+  <!-- 2. Nội Dung Bài Viết -->
+  <main class="main-container">
+    <h1 class="page-title">
+      <span style="color: var(--primary-blue, #008744);">TỦ NHỰA QUẦN ÁO ECOPLAST CAO CẤP</span><br>
+      <span style="color: var(--accent-orange, #f37021);">GIẢI PHÁP CHỐNG ẨM MỐC & MỐI MỌT TUYỆT ĐỐI</span>
+    </h1>
+
+    <div class="story-quote" style="background: #1a1a1a; border-left: 4px solid var(--primary-blue, #008744); padding: 15px 20px; margin: 25px 0; border-radius: 0 8px 8px 0; font-style: italic; color: #ddd;">
+      "Một chiếc tủ quần áo bền đẹp không chỉ là nơi lưu trữ trang phục, mà còn là điểm nhấn thẩm mỹ nâng tầm không gian sống. Tủ nhựa Ecoplast giải quyết triệt để nỗi lo ẩm mốc, cong vênh của thời tiết miền Bắc." — KTS Nguyễn Thanh.
+    </div>
+
+    <h2>1. Tại Sao Nên Chọn Tủ Nhựa Quần Áo Ecoplast?</h2>
+    <p>Trong điều kiện khí hậu nóng ẩm mưa nhiều đặc trưng tại Hà Nội và các tỉnh phía Bắc, tủ gỗ công nghiệp thường đối mặt với nguy cơ bong tróc, ẩm mốc, xệ cánh hay mối mọt xông sau thời gian ngắn sử dụng. Tủ nhựa Ecoplast Đại Việt ra đời như một bước tiến mới mang lại sự bền bỉ cùng tính thẩm mỹ cao.</p>
+
+    <h3 style="margin-top: 15px; margin-bottom: 10px; color: #fff;">Ưu điểm vượt trội của chất liệu nhựa Ecoplast:</h3>
+    <p>• <strong>Chống nước & chống ẩm mốc 100%:</strong> Cấu tạo từ tấm nhựa rỗng lõi gân mật độ cao, tuyệt đối không ngấm nước hay mục nát dù đặt ở môi trường ẩm ướt.</p>
+    <p>• <strong>Chống mối mọt tuyệt đối:</strong> Thành phần nhựa PVC cao cấp ngăn chặn hoàn toàn sự xâm nhập của mối mọt.</p>
+    <p>• <strong>Không cong vênh, xệ cánh:</strong> Kết cấu mộng âm dương kết hợp phụ kiện bản lề giảm chấn chuyên dụng giúp cánh tủ luôn chắc chắn, vận hành êm ái.</p>
+    <p>• <strong>An toàn sức khỏe & chống cháy lan:</strong> Chất liệu đạt chuẩn an toàn, không chứa formaldehyde gây hại, có khả năng không bắt lửa, hạn chế lây lan khi có sự cố.</p>
+
+    <h2>2. Các Kiểu Dáng Tủ Quần Áo Ecoplast Phổ Biến</h2>
+    <p>Tùy thuộc vào diện tích phòng ngủ và nhu cầu sử dụng, KTS Nguyễn Thanh mang đến nhiều phương án thiết kế đa dạng:</p>
+    
+    <p>• <strong>Tủ quần áo cánh mở truyền thống:</strong> Thích hợp cho phòng ngủ rộng rãi, chia nhiều ô khoang treo đồ ngắn, đồ dài và ngăn kéo để phụ kiện.</p>
+    <p>• <strong>Tủ quần áo cánh lùa (cánh trượt):</strong> Giải pháp hoàn hảo cho phòng ngủ diện tích hẹp, tiết kiệm khoảng trống mở cửa.</p>
+    <p>• <strong>Tủ quần áo kịch trần:</strong> Tối ưu triệt để chiều cao căn phòng, tăng thêm khoang chứa chăn màng, vali mùa đông trên cao.</p>
+    <p>• <strong>Tủ kết hợp kệ trang trí / bàn học / bàn trang điểm:</strong> Tạo nên hệ tủ đa năng liền khối sang trọng, tối ưu không gian sử dụng.</p>
+
+    <h2>3. Bảng Màu Tủ Nhựa Ecoplast Hiện Đại</h2>
+    <p>Tấm nhựa Ecoplast sở hữu bộ sưu tập màu sắc phong phú, phù hợp với nhiều phong cách nội thất khác nhau:</p>
+    <p>• <strong>Tông màu vân gỗ tự nhiên:</strong> Vân gỗ óc chó, vân gỗ sồi, vân gỗ xoan đào mang lại cảm giác ấm cúng, sang trọng.</p>
+    <p>• <strong>Tông màu hiện đại:</strong> Trắng trơn, ghi xám, kem hiện đại thích hợp cho các căn hộ chung cư, nhà phố phong cách tối giản.</p>
+
+    <!-- Khối Thông Tin Tư Vấn & Thi Công -->
+    <div style="background: #1a1a1a; padding: 22px; border-radius: 8px; margin: 30px 0; border: 1px solid #2e2e2e;">
+      <h3 style="color: var(--accent-orange, #f37021); margin-bottom: 15px;">QUY TRÌNH THI CÔNG TẠI NỘI THẤT ECOPLAST HÀ NỘI</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li style="margin-bottom: 10px;">✔ <strong>Bước 1:</strong> Khảo sát, đo đạc thực tế tại công trình hoàn toàn miễn phí.</li>
+        <li style="margin-bottom: 10px;">✔ <strong>Bước 2:</strong> Tư vấn mẫu mã, lên bản vẽ 2D/3D phù hợp với không gian thực tế.</li>
+        <li style="margin-bottom: 10px;">✔ <strong>Bước 3:</strong> Gia công cắt tấm chính xác tại xưởng sản xuất Long Biên.</li>
+        <li style="margin-bottom: 10px;">✔ <strong>Bước 4:</strong> Vận chuyển, lắp đặt hoàn thiện và nghiệm thu tận nơi.</li>
+      </ul>
+    </div>
+
+    <!-- Khối Liên Kết Bàn Giao Thực Tế -->
+    <div style="background: #1a1a1a; padding: 22px; border-radius: 8px; border: 1px solid var(--primary-blue, #008744); margin-top: 35px;">
+      <h3 style="color: var(--accent-orange, #f37021); margin-bottom: 10px;">NHẬT KÝ THI CÔNG THỰC TẾ</h3>
+      <p style="font-size: 13px; color: #aaa; margin-bottom: 12px;">Xem ngay các công trình tủ quần áo nhựa Ecoplast do KTS Nguyễn Thanh bàn giao:</p>
+      <ul style="list-style: none; padding: 0; line-height: 2;">
+        <li>👉 Dự án Việt Hưng: <a href="https://ktsnguyenthanh.io.vn/tu-nhua-quan-ao-ecoplast-pham-khac-quang.html" style="color: var(--accent-orange, #f37021); font-weight: bold; text-decoration: none;">Tủ quần áo 6 cánh kịch trần tại Phạm Khắc Quảng (Long Biên)</a></li>
+        <li>👉 Danh mục liên quan: <a href="https://ecoplasthanoi.io.vn/tu-nhua-quan-ao-ecoplast/" style="color: var(--primary-blue, #008744); font-weight: bold; text-decoration: none;" target="_blank" rel="noopener">BST Tủ quần áo nhựa Ecoplast cao cấp chính hãng</a></li>
+      </ul>
+    </div>
+
+    <!-- 3. Khối Tác Giả Tự Động Nạp -->
+    <div id="site-author"></div>
+  </main>
+
+  <!-- 4. Footer & Floating CTA Cố Định -->
+  <div id="site-footer"></div>
+  <div id="site-cta"></div>
+
+  <!-- Script JS Dùng Chung -->
+  <script src="/main.js"></script>
+</body>
+</html>
