@@ -118,7 +118,7 @@ function loadFloatingCTA() {
 
   ctaContainer.innerHTML = `
     <div style="position: fixed; bottom: 20px; right: 20px; z-index: 999; display: flex; flex-direction: column; gap: 10px;">
-      <a href="https://zalo.me/0886374043" target="_blank" rel="noopener" style="background: #0088FF; color: #fff; padding: 10px 16px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 13px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); display: flex; align-items: center; gap: 8px;">
+      <a href="https://zalo.me/0359117525" target="_blank" rel="noopener" style="background: #0088FF; color: #fff; padding: 10px 16px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 13px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); display: flex; align-items: center; gap: 8px;">
         💬 Zalo Tư Vấn
       </a>
       <a href="tel:0886374043" style="background: #f37021; color: #fff; padding: 10px 16px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 13px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); display: flex; align-items: center; gap: 8px;">
