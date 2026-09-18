@@ -1,43 +1,49 @@
-/* ==========================================================
-   MAIN.JS - SCRIPT NẠP COMPONENT TỰ ĐỘNG
-   ========================================================== */
+// Hàm nạp Header động
+function loadHeader() {
+  const headerContainer = document.getElementById('site-header');
+  if (!headerContainer) return;
 
-document.addEventListener("DOMContentLoaded", function() {
-  
-  // 1. Tự động nạp Header
-  const headerElem = document.getElementById('site-header');
-  if (headerElem) {
-    fetch('/header.html')
-      .then(res => res.text())
-      .then(html => headerElem.innerHTML = html)
-      .catch(err => console.error('Lỗi nạp header.html:', err));
+  headerContainer.innerHTML = `
+    <header>
+      <div class="brand-banner">
+        <a href="/">
+          <img src="https://raw.githubusercontent.com/ecoplasthn/ktsnguyenthanh-blog/refs/heads/main/KTS%20Nguy%E1%BB%85n%20thanh.webp" alt="KTS Nguyễn Thanh" class="site-logo" />
+        </a>
+      </div>
+      <!-- Nút Hamburger Toggle -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="siteNav">
+        <ul class="nav-list">
+          <li><a href="/">TRANG CHỦ</a></li>
+          <li><a href="/tu-nhua-quan-ao-ecoplast.html">TỦ QUẦN ÁO</a></li>
+          <li><a href="/tu-bep-nhua-ecoplast.html" class="text-orange">TỦ BẾP</a></li>
+          <li><a href="/giuong-ngu-nhua-ecoplast.html">GIƯỜNG NGỦ</a></li>
+          <li><a href="/ban-hoc-nhua-ecoplast.html">BÀN HỌC</a></li>
+          <li><a href="/combo-phong-ngu-nhua-ecoplast.html">COMBO PHÒNG NGỦ</a></li>
+          <li><a href="/ke-tivi-nhua-ecoplast.html">KỆ TIVI</a></li>
+          <li><a href="/tu-giay-nhua-ecoplast.html">TỦ GIẦY</a></li>
+          <li><a href="/tu-cau-thang-nhua-ecoplast.html">TỦ CẦU THANG</a></li>
+          <li><a href="/tu-van-noi-that.html">TƯ VẤN NỘI THẤT</a></li>
+        </ul>
+      </nav>
+    </header>
+  `;
+
+  // GẮN SỰ KIỆN CLICK MỞ MENU TRÊN MOBILE
+  const toggleBtn = document.getElementById('menuToggle');
+  const navMenu = document.getElementById('siteNav');
+
+  if (toggleBtn && navMenu) {
+    toggleBtn.addEventListener('click', function () {
+      navMenu.classList.toggle('active');
+      toggleBtn.classList.toggle('open');
+    });
   }
+}
 
-  // 2. Tự động nạp Footer
-  const footerElem = document.getElementById('site-footer');
-  if (footerElem) {
-    fetch('/footer.html')
-      .then(res => res.text())
-      .then(html => footerElem.innerHTML = html)
-      .catch(err => console.error('Lỗi nạp footer.html:', err));
-  }
-
-  // 3. Tự động nạp Khối Tác Giả
-  const authorElem = document.getElementById('site-author');
-  if (authorElem) {
-    fetch('/author-box.html')
-      .then(res => res.text())
-      .then(html => authorElem.innerHTML = html)
-      .catch(err => console.error('Lỗi nạp author-box.html:', err));
-  }
-
-  // 4. Tự động nạp Nút Liên Hệ Floating CTA
-  const ctaElem = document.getElementById('site-cta');
-  if (ctaElem) {
-    fetch('/cta-buttons.html')
-      .then(res => res.text())
-      .then(html => ctaElem.innerHTML = html)
-      .catch(err => console.error('Lỗi nạp cta-buttons.html:', err));
-  }
-
-});
+// Gọi hàm khi DOM sẵn sàng
+document.addEventListener('DOMContentLoaded', loadHeader);
