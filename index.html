@@ -3,106 +3,122 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KTS Nguyễn Thanh - Nhật Ký Thi Công Nội Thất Nhựa Ecoplast</title>
+  <title>KTS Nguyễn Thanh - Nhật Ký Thi Công & Kiến Thức Nội Thất Nhựa Ecoplast</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: Arial, sans-serif; background-color: #121212; color: #fff; line-height: 1.6; }
 
     /* Header Dark Style */
-    header { background-color: #1a1a1a; padding-top: 20px; border-bottom: 1px solid #333; text-align: center; }
+    header { background-color: #1a1a1a; padding-top: 25px; border-bottom: 1px solid #333; text-align: center; }
     
-    /* Top Banner / Logo */
+    /* Logo / Banner Brand */
     .brand-banner { display: inline-block; margin-bottom: 15px; }
-    .brand-banner h1 { font-size: 24px; color: #fff; letter-spacing: 1px; }
+    .brand-banner h1 { font-size: 26px; color: #fff; letter-spacing: 1.5px; font-weight: bold; }
     .brand-banner h1 span { color: #f39c12; }
+    .brand-banner p { font-size: 13px; color: #888; margin-top: 4px; text-transform: uppercase; letter-spacing: 1px; }
 
-    /* Main Navigation Menu Nội Bộ */
-    nav { background-color: #181818; padding: 15px 10px; border-top: 1px solid #2a2a2a; }
+    /* Navigation Menu Nội Bộ Chuẩn Danh Mục */
+    nav { background-color: #181818; padding: 14px 10px; border-top: 1px solid #2a2a2a; }
     .nav-list { 
       max-width: 1200px; 
       margin: 0 auto; 
       display: flex; 
       flex-wrap: wrap; 
       justify-content: center; 
-      gap: 12px 20px; 
+      gap: 15px 25px; 
       list-style: none; 
     }
     .nav-list a { 
-      color: #ccc; 
+      color: #d1d1d1; 
       text-decoration: none; 
       font-size: 13px; 
       font-weight: bold; 
       text-transform: uppercase; 
       letter-spacing: 0.5px;
-      transition: color 0.2s ease;
+      transition: all 0.2s ease;
     }
     .nav-list a:hover, .nav-list a.active { color: #f39c12; }
 
-    /* Container Nội Dung */
-    .main-container { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
+    /* Main Container */
+    .main-container { max-width: 1100px; margin: 35px auto; padding: 0 20px; }
     .section-title { font-size: 20px; color: #f39c12; text-transform: uppercase; border-bottom: 2px solid #f39c12; padding-bottom: 8px; margin-bottom: 25px; }
 
-    /* Grid Bài Viết */
-    .article-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-    .article-card { background: #222; border: 1px solid #333; border-radius: 6px; padding: 20px; }
-    .article-card h3 { font-size: 16px; margin-bottom: 10px; }
+    /* Layout Grid Bài Viết */
+    .article-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 22px; }
+    .article-card { background: #1e1e1e; border: 1px solid #2e2e2e; border-radius: 6px; padding: 22px; transition: transform 0.2s, border-color 0.2s; }
+    .article-card:hover { transform: translateY(-3px); border-color: #f39c12; }
+    .category-badge { display: inline-block; background: #333; color: #f39c12; font-size: 11px; font-weight: bold; padding: 3px 8px; border-radius: 3px; margin-bottom: 12px; text-transform: uppercase; }
+    .article-card h3 { font-size: 16px; margin-bottom: 10px; line-height: 1.4; }
     .article-card h3 a { color: #fff; text-decoration: none; }
     .article-card h3 a:hover { color: #f39c12; }
-    .article-meta { font-size: 12px; color: #888; margin-bottom: 10px; }
-    .article-desc { font-size: 13.5px; color: #ccc; margin-bottom: 15px; }
-    .btn-more { display: inline-block; background: #f39c12; color: #121212; padding: 6px 14px; font-weight: bold; font-size: 12px; border-radius: 3px; text-decoration: none; }
+    .article-meta { font-size: 12px; color: #777; margin-bottom: 12px; }
+    .article-desc { font-size: 13.5px; color: #bbb; margin-bottom: 18px; }
+    .btn-more { display: inline-block; background: #f39c12; color: #121212; padding: 7px 16px; font-weight: bold; font-size: 12px; border-radius: 3px; text-decoration: none; }
+
+    /* Footer */
+    footer { text-align: center; padding: 30px 20px; background: #181818; color: #777; font-size: 13px; margin-top: 60px; border-top: 1px solid #2a2a2a; }
   </style>
 </head>
 <body>
 
   <header>
-    <!-- Logo / Title Trung Tâm -->
     <div class="brand-banner">
       <a href="/" style="text-decoration: none;">
         <h1>KTS <span>NGUYỄN THANH</span></h1>
+        <p>Giải Pháp Nội Thất Nhựa Ecoplast Cao Cấp Hà Nội</p>
       </a>
     </div>
 
-    <!-- MENU NỘI BỘ (Dẫn trực tiếp tới bài viết/trang trên ktsnguyenthanh.io.vn) -->
+    <!-- MENU NỘI BỘ MỞ RỘNG THEO DANH MỤC -->
     <nav>
       <ul class="nav-list">
         <li><a href="/" class="active">TRANG CHỦ</a></li>
-        <li><a href="/nhat-ky-thi-cong-tu-giay-dep-nhua-ecoplast-ec-tgd18-hoang-nhu-tiep-15-9.html">TỦ GIẦY BỒ ĐỀ (15/9)</a></li>
-        <li><a href="/nhat-ky-thi-cong-tu-bep-nhua-ecoplast-ec-tbni09-thach-ban-15-9.html">TỦ BẾP THẠCH BÀN (15/9)</a></li>
-        <li><a href="/nhat-ky-thi-cong-tu-nhua-ecomi-ec-ecm04-nguyen-cong-tru-12-9.html">TỦ NGUYỄN CÔNG TRỨ (12/9)</a></li>
+        <li><a href="#cong-trinh">NHẬT KÝ THI CÔNG</a></li>
+        <li><a href="#kien-thuc">KIẾN THỨC NỘI THẤT</a></li>
+        <li><a href="#tu-bep">TỦ BẾP NHỰA</a></li>
+        <li><a href="#tu-giay">TỦ GIẦY NHỰA</a></li>
+        <li><a href="#tu-ao">TỦ QUẦN ÁO</a></li>
+        <li><a href="#lien-he">LIÊN HỆ</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="main-container">
-    <h2 class="section-title">Nhật Ký Thi Công Mới Nhất</h2>
+    <h2 class="section-title" id="cong-trinh">Nhật Ký Thi Công &amp; Công Trình Mới</h2>
 
     <div class="article-grid">
-      <!-- Bài 1 -->
+      <!-- Công trình 1: Bồ Đề -->
       <article class="article-card">
+        <span class="category-badge">Nhật Ký Thi Công</span>
         <div class="article-meta">15/09/2026 • Hoàng Như Tiếp, Bồ Đề</div>
         <h3><a href="/nhat-ky-thi-cong-tu-giay-dep-nhua-ecoplast-ec-tgd18-hoang-nhu-tiep-15-9.html">Bàn Giao Tủ Giày Dép Nhựa Ecoplast EC-TGD18 Cho Bác Tiến Đạt</a></h3>
         <p class="article-desc">Lắp đặt hoàn thiện tủ giày cao 2m vân gỗ sồi tại ngõ 11 phố Hoàng Như Tiếp chiều 15/9.</p>
         <a href="/nhat-ky-thi-cong-tu-giay-dep-nhua-ecoplast-ec-tgd18-hoang-nhu-tiep-15-9.html" class="btn-more">ĐỌC TIẾP</a>
       </article>
 
-      <!-- Bài 2 -->
+      <!-- Công trình 2: Thạch Bàn -->
       <article class="article-card">
+        <span class="category-badge">Nhật Ký Thi Công</span>
         <div class="article-meta">15/09/2026 • Ngõ 191 Thạch Bàn</div>
         <h3><a href="/nhat-ky-thi-cong-tu-bep-nhua-ecoplast-ec-tbni09-thach-ban-15-9.html">Bàn Giao Bộ Tủ Bếp Nhựa Ecoplast EC-TBNI09 Cho Chị Minh Thư</a></h3>
         <p class="article-desc">Bộ tủ bếp chữ I 7 cánh màu ghi xám hiện đại thi công sáng mưa lớn 15/9 tại Thạch Bàn.</p>
         <a href="/nhat-ky-thi-cong-tu-bep-nhua-ecoplast-ec-tbni09-thach-ban-15-9.html" class="btn-more">ĐỌC TIẾP</a>
       </article>
 
-      <!-- Bài 3 -->
+      <!-- Mẫu bài Kiến Thức tương lai -->
       <article class="article-card">
-        <div class="article-meta">12/09/2026 • Phố Nguyễn Công Trứ</div>
-        <h3><a href="/nhat-ky-thi-cong-tu-nhua-ecomi-ec-ecm04-nguyen-cong-tru-12-9.html">Bàn Giao Tủ Nhựa Ecomi EC-ECM04 Cho Bác Ngọc Lan</a></h3>
-        <p class="article-desc">Lắp đặt hoàn thiện tủ nhựa cánh lùa cao cấp tại phố Nguyễn Công Trứ.</p>
-        <a href="/nhat-ky-thi-cong-tu-nhua-ecomi-ec-ecm04-nguyen-cong-tru-12-9.html" class="btn-more">ĐỌC TIẾP</a>
+        <span class="category-badge">Kiến Thức Nội Thất</span>
+        <div class="article-meta">10/09/2026 • Tư Vấn Vật Liệu</div>
+        <h3><a href="#">Tại Sao Nên Chọn Tủ Bếp Nhựa Ecoplast Cho Nhà Phố Mùa Nồm Ẩm?</a></h3>
+        <p class="article-desc">Phân tích ưu điểm chống nước 100%, chống mối mọt và độ bền chịu lực vượt trội của cốt nhựa Ecoplast.</p>
+        <a href="#" class="btn-more">ĐỌC TIẾP</a>
       </article>
     </div>
   </main>
+
+  <footer>
+    <p>© 2026 KTS Nguyễn Thanh • ktsnguyenthanh.io.vn • Chuyên thi công nội thất nhựa Ecoplast chính hãng</p>
+  </footer>
 
 </body>
 </html>
