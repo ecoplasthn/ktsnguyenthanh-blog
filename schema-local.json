@@ -1,0 +1,35 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://ktsnguyenthanh.io.vn/#author",
+      "name": "KTS Nguyễn Thanh",
+      "jobTitle": "Kiến trúc sư & Chuyên gia tư vấn thi công nội thất nhựa Ecoplast",
+      "url": "https://ktsnguyenthanh.io.vn/",
+      "image": "https://raw.githubusercontent.com/ecoplasthn/ktsnguyenthanh-blog/refs/heads/main/KTS%20Nguy%E1%BB%85n%20thanh.webp",
+      "telephone": "+84886374043",
+      "worksFor": {
+        "@type": "LocalBusiness",
+        "name": "Ecoplast Hà Nội",
+        "url": "https://ecoplasthanoi.io.vn"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://ktsnguyenthanh.io.vn/#business",
+      "name": "KTS Nguyễn Thanh - Nội Thất Nhựa Ecoplast",
+      "url": "https://ktsnguyenthanh.io.vn/",
+      "logo": "https://raw.githubusercontent.com/ecoplasthn/ktsnguyenthanh-blog/refs/heads/main/KTS%20Nguy%E1%BB%85n%20thanh.webp",
+      "telephone": "+84886374043",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Ngõ 19 Kim Quan, phường Việt Hưng",
+        "addressLocality": "Quận Long Biên",
+        "addressRegion": "Hà Nội",
+        "addressCountry": "VN"
+      },
+      "priceRange": "$$"
+    }
+  ]
+}
