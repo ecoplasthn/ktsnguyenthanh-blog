@@ -1,101 +1,106 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KTS Nguyễn Thanh - Chuyên Gia Nội Thất Nhựa Ecoplast</title>
-    <!-- Thư viện Bootstrap 5 + Icon -->
-    <link href="https://jsdelivr.net" rel="stylesheet">
-    <script src="https://jsdelivr.net"></script>
-    <link rel="stylesheet" href="https://jsdelivr.net">
-    <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8f9fa; }
-        .hero-section { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://unsplash.com') no-repeat center center; background-size: cover; color: white; padding: 80px 0; }
-        .card-post { border: none; border-radius: 10px; transition: transform 0.2s; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        .card-post:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KTS Nguyễn Thanh - Nội Thất Nhựa Ecoplast</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #fff; line-height: 1.6; }
+
+    /* Header Dark Style */
+    header { background-color: #1a1a1a; padding-top: 20px; border-bottom: 1px solid #333; text-align: center; }
+    
+    /* Top Banner / Logo */
+    .brand-banner { display: inline-block; margin-bottom: 15px; }
+    .brand-banner img { max-width: 100%; height: auto; border-radius: 4px; }
+
+    /* Main Navigation Menu */
+    nav { background-color: #181818; padding: 15px 10px; border-top: 1px solid #2a2a2a; }
+    .nav-list { 
+      max-width: 1200px; 
+      margin: 0 auto; 
+      display: flex; 
+      flex-wrap: wrap; 
+      justify-content: center; 
+      gap: 15px 25px; 
+      list-style: none; 
+    }
+    .nav-list a { 
+      color: #fff; 
+      text-decoration: none; 
+      font-size: 13px; 
+      font-weight: bold; 
+      text-transform: uppercase; 
+      letter-spacing: 0.5px;
+      transition: color 0.2s ease;
+    }
+    .nav-list a:hover, .nav-list a.active { color: #f39c12; }
+
+    /* Container Nội Dung */
+    .main-container { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
+    .section-title { font-size: 20px; color: #f39c12; text-transform: uppercase; border-bottom: 2px solid #f39c12; padding-bottom: 8px; margin-bottom: 25px; }
+
+    /* Grid Bài Viết */
+    .article-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+    .article-card { background: #222; border: 1px solid #333; border-radius: 6px; padding: 20px; }
+    .article-card h3 { font-size: 16px; margin-bottom: 10px; }
+    .article-card h3 a { color: #fff; text-decoration: none; }
+    .article-card h3 a:hover { color: #f39c12; }
+    .article-meta { font-size: 12px; color: #888; margin-bottom: 10px; }
+    .article-desc { font-size: 13.5px; color: #ccc; margin-bottom: 15px; }
+    .btn-more { display: inline-block; background: #f39c12; color: #121212; padding: 6px 14px; font-weight: bold; font-size: 12px; border-radius: 3px; text-decoration: none; }
+  </style>
 </head>
 <body>
 
-    <!-- THANH MENU ĐIỀU HƯỚNG CHUẨN ĐẤU NỐI -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold text-success" href="index.html">
-                <i class="bi bi-person-workspace me-2"></i>KTS Nguyễn Thành
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto fw-medium">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Trang Chủ Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="tu-nhua-ecoplast-co-ben-khong.html">Độ Bền Nhựa Ecoplast</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gia-tu-bep-nhua-ecoplast.html">Báo Giá Tủ Bếp</a></li>
-                    <li class="nav-item ms-lg-3"><a class="btn btn-success text-white px-4 rounded-pill" href="https://ecoplasthanoi.io.vn" target="_blank"><i class="bi bi-globe me-2"></i>Xem Web Chính</a></li>
-                </ul>
-            </div>
-        </div>
+  <header>
+    <!-- Logo Banner Trung Tâm -->
+    <div class="brand-banner">
+      <a href="https://ktsnguyenthanh.io.vn/">
+        <img src="https://ecoplasthanoi.io.vn/wp-content/uploads/2026/06/Tu-bep-nhua-Ecoplast-chu-I-7-canh-EC-TBNI09-Thach-Ban-Ha-Noi-600x450.webp" alt="KTS Nguyễn Thanh Logo" style="max-height: 70px;" />
+      </a>
+    </div>
+
+    <!-- Menu 2 Dòng Kiểu WordPress -->
+    <nav>
+      <ul class="nav-list">
+        <li><a href="https://ktsnguyenthanh.io.vn/" class="active">HOME</a></li>
+        <li><a href="https://ecoplasthanoi.io.vn/tu-nhua-quan-ao/" target="_blank">TỦ NHỰA QUẦN ÁO</a></li>
+        <li><a href="#kien-thuc">KIẾN THỨC NỘI THẤT</a></li>
+        <li><a href="https://ecoplasthanoi.io.vn/ban-hoc-nhua/" target="_blank">BÀN HỌC NHỰA</a></li>
+        <li><a href="https://ecoplasthanoi.io.vn/tu-bep-nhua-ecoplast/" target="_blank">TỦ BẾP NHỰA</a></li>
+        <li><a href="https://ecoplasthanoi.io.vn/tu-cau-thang-nhua/" target="_blank">TỦ CẦU THANG NHỰA</a></li>
+        <li><a href="https://ecoplasthanoi.io.vn/giuong-ngu-nhua/" target="_blank">GIƯỜNG NGỦ NHỰA</a></li>
+        <li><a href="https://ecoplasthanoi.io.vn/tu-giay-dep-nhua-ecoplast/" target="_blank">TỦ GIẦY NHỰA</a></li>
+        <li><a href="https://ecoplasthanoi.io.vn/ke-tivi-nhua/" target="_blank">KỆ TIVI NHỰA</a></li>
+        <li><a href="https://ecoplasthanoi.io.vn/tu-thuoc-nhua/" target="_blank">TỦ THUỐC NHỰA</a></li>
+        <li><a href="https://ecoplasthanoi.io.vn/quay-nhua-pha-che/" target="_blank">QUẦY NHỰA PHA CHẾ</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <!-- BANNER CHÀO MỪNG -->
-    <header class="hero-section text-center">
-        <div class="container">
-            <h1 class="display-4 fw-bold">Góc Nhìn Chuyên Gia Nội Thất</h1>
-            <p class="lead fs-4 text-light">Chia sẻ kiến thức chọn vật liệu nhựa Ecoplast chuẩn và tối ưu chi phí từ KTS Nguyễn Thành.</p>
-        </div>
-    </header>
+  <main class="main-container">
+    <h1 class="section-title">Nhật Ký Thi Công Mới Nhất</h1>
 
-    <!-- KHỐI BÀI VIẾT BẪY TRAFFIC (CÓ ẢNH THUMBNAIL) -->
-    <main class="container my-5">
-        <h2 class="text-center fw-bold mb-5">Bài Viết Phân Tích Chuyên Sâu</h2>
-        <div class="row g-4">
-            
-            <!-- Thẻ bài viết 1 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card card-post h-100">
-                    <!-- Link ảnh tủ quần áo/phòng ngủ mẫu, sau này bạn có thể thay bằng link ảnh xưởng của bạn -->
-                    <img src="https://unsplash.com" class="card-img-top rounded-top" alt="Tủ nhựa ecoplast" style="height: 200px; object-fit: cover;">
-                    <div class="card-body d-flex flex-column">
-                        <span class="badge bg-success mb-2 align-self-start">Đánh giá chất liệu</span>
-                        <h3 class="card-title h5 fw-bold">Tủ nhựa Ecoplast có bền không? Phân tích từ KTS</h3>
-                        <p class="card-text text-muted small">Nhiều khách hàng phân vân giữa nhựa Ecoplast và gỗ công nghiệp. Bài viết này sẽ mổ xẻ chi tiết thông số kỹ thuật...</p>
-                        <a href="tu-nhua-ecoplast-co-ben-khong.html" class="btn btn-outline-success mt-auto btn-sm rounded-pill">Đọc bài viết</a>
-                    </div>
-                </div>
-            </div>
+    <div class="article-grid">
+      <!-- Bài 1 -->
+      <article class="article-card">
+        <div class="article-meta">15/09/2026 • Hoàng Như Tiếp, Bồ Đề</div>
+        <h3><a href="nhat-ky-thi-cong-tu-giay-dep-nhua-ecoplast-ec-tgd18-hoang-nhu-tiep-15-9.html">Bàn Giao Tủ Giày Dép Nhựa Ecoplast EC-TGD18 Cho Bác Tiến Đạt</a></h3>
+        <p class="article-desc">Lắp đặt hoàn thiện tủ giày cao 2m vân gỗ sồi tại ngõ 11 phố Hoàng Như Tiếp chiều 15/9.</p>
+        <a href="nhat-ky-thi-cong-tu-giay-dep-nhua-ecoplast-ec-tgd18-hoang-nhu-tiep-15-9.html" class="btn-more">ĐỌC TIẾP</a>
+      </article>
 
-            <!-- Thẻ bài viết 2 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card card-post h-100">
-                    <!-- Link ảnh tủ bếp mẫu -->
-                    <img src="https://unsplash.com" class="card-img-top rounded-top" alt="Tủ bếp nhựa ecoplast" style="height: 200px; object-fit: cover;">
-                    <div class="card-body d-flex flex-column">
-                        <span class="badge bg-primary mb-2 align-self-start">Báo giá thi công</span>
-                        <h3 class="card-title h5 fw-bold">Giá tủ bếp nhựa Ecoplast bao nhiêu 1 mét dài? Báo giá tại xưởng</h3>
-                        <p class="card-text text-muted small">Dự toán chi tiết chi phí làm tủ bếp nhựa trên và dưới quy chuẩn, các lưu ý tránh phát sinh chi phí khi may đo...</p>
-                        <a href="gia-tu-bep-nhua-ecoplast.html" class="btn btn-outline-primary mt-auto btn-sm rounded-pill">Đọc bài viết</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Thẻ số 3: Nút kêu gọi hành động tuồn khách -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card card-post h-100 border border-success bg-light text-center justify-content-center p-4">
-                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                        <i class="bi bi-telephone-outbound text-success display-4 mb-3"></i>
-                        <h3 class="h5 fw-bold text-success">Bạn cần đặt may đo tủ nhựa?</h3>
-                        <p class="small text-muted">Liên hệ ngay Xưởng Nội Thất Ecoplast Hà Nội để nhận thiết kế 3D miễn phí và báo giá tại xưởng không qua trung gian.</p>
-                        <a href="https://ecoplasthanoi.io.vn" target="_blank" class="btn btn-success text-white w-100 rounded-pill py-2 fw-bold">Truy Cập Xưởng Sản Xuất</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </main>
-
-    <footer class="bg-dark text-white text-center py-4 mt-5 border-top border-success border-3">
-        <p class="mb-0 small">© 2026 ktsnguyenthanh.io.vn - Trang thông tin định danh thuộc hệ thống Ecoplast Hà Nội</p>
-    </footer>
+      <!-- Bài 2 -->
+      <article class="article-card">
+        <div class="article-meta">15/09/2026 • Ngõ 191 Thạch Bàn</div>
+        <h3><a href="nhat-ky-thi-cong-tu-bep-nhua-ecoplast-ec-tbni09-thach-ban-15-9.html">Bàn Giao Bộ Tủ Bếp Nhựa Ecoplast EC-TBNI09 Cho Chị Minh Thư</a></h3>
+        <p class="article-desc">Bộ tủ bếp chữ I 7 cánh màu ghi xám hiện đại thi công sáng mưa lớn 15/9 tại Thạch Bàn.</p>
+        <a href="nhat-ky-thi-cong-tu-bep-nhua-ecoplast-ec-tbni09-thach-ban-15-9.html" class="btn-more">ĐỌC TIẾP</a>
+      </article>
+    </div>
+  </main>
 
 </body>
 </html>
