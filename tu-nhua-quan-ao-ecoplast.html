@@ -1,20 +1,19 @@
-<section class="projects-section">
-  <h2>Nhật Ký Lắp Đặt Tủ Quần Áo Ecoplast Thực Tế</h2>
-  <div class="article-grid">
-
-    <!-- Công trình 1: Tủ quần áo mới nhất -->
-    <article class="article-card">
-      <div class="article-meta">18/09/2026 • Linh Đàm, Hoàng Mai</div>
-      <h3><a href="/tu-nhua-quan-ao-ecoplast-4-canh-linh-dam.html">Bàn Giao Tủ Quần Áo Ecoplast 4 Cánh Cánh Lùa Cho Gia Đình Anh Nam</a></h3>
-      <p class="article-desc">Thi công tủ quần áo nhựa Ecoplast màu vân gỗ óc chó cao 2m4 kịch trần tại chung cư HH Linh Đàm.</p>
-    </article>
-
-    <!-- Công trình 2 -->
-    <article class="article-card">
-      <div class="article-meta">12/09/2026 • Nguyễn Công Trứ</div>
-      <h3><a href="/tu-nhua-ecomi-ec-ecm04-nguyen-cong-tru-12-9.html">Bàn Giao Tủ Nhựa Ecomi EC-ECM04 Cho Bác Ngọc Lan</a></h3>
-      <p class="article-desc">Lắp đặt hoàn thiện tủ nhựa cánh lùa cao cấp tại phố Nguyễn Công Trứ.</p>
-    </article>
-
-  </div>
-</section>
+<script>
+  fetch('/posts.json')
+    .then(response => response.json())
+    .then(data => {
+      // Chỉ lọc lấy các bài viết có category là 'tu-ao'
+      const posts = data.filter(item => item.category === 'tu-ao');
+      
+      const container = document.getElementById('project-list');
+      container.innerHTML = posts.map(post => `
+        <div class="card">
+          <div class="card-meta">${post.date} • ${post.location}</div>
+          <h3 class="card-title">${post.title}</h3>
+          <p class="card-desc">${post.desc}</p>
+          <a href="${post.url}" class="btn-read">ĐỌC TIẾP</a>
+        </div>
+      `).join('');
+    })
+    .catch(err => console.error('Lỗi tải danh sách bài viết tủ áo:', err));
+</script>
